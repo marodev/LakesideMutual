@@ -98,4 +98,4 @@ services:
       - "activeMQ.host=policy-management-backend"
       - "activeMQ.port=61613"
     ports:
-      - "50051:50051"
+      - "50051:50051" 
