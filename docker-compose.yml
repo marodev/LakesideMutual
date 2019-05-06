@@ -40,4 +40,4 @@ services:
     environment:
       - "REACT_APP_CUSTOMER_MANAGEMENT_BACKEND=http://customer-management-backend:8100"
     ports:
-      - "3020:80"
+      - "80:80"
