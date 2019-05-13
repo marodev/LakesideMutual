@@ -105,9 +105,6 @@ public class DataLoader implements ApplicationRunner {
 	}
 
 	private boolean databaseIsEmpty() {
-		CustomerId randomCustomer = customerRepository.nextId();
-		String id = randomCustomer.getId();
-
-		return id == null || id.isEmpty();
+		return customerRepository.count() == 0;
 	}
 }
