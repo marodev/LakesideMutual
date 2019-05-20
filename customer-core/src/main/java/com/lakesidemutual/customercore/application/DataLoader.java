@@ -85,6 +85,10 @@ public class DataLoader implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws ParseException {
 
+		if(!databaseIsEmpty()) {
+			return;
+		}
+
 		List<Map<String, String>> customerData = loadCustomers();
 
 		logger.info("Loaded " + customerData.size() + " customers.");
@@ -98,5 +102,9 @@ public class DataLoader implements ApplicationRunner {
 		logger.info("Inserted " + customerData.size() + " customers into database.");
 
 		logger.info("DataLoader has successfully imported all application dummy data, the application is now ready.");
+	}
+
+	private boolean databaseIsEmpty() {
+		return customerRepository.count() == 0;
 	}
 }

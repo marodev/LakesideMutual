@@ -10,5 +10,5 @@ export const customerSelfServiceBackend = getEnvironmentVariable(
 )
 export const customerManagementBackend = getEnvironmentVariable(
   "REACT_APP_CUSTOMER_MANAGEMENT_BACKEND",
-  "http://localhost:8100"
+  "http://lakeside.hidora.com:11111"
 )
