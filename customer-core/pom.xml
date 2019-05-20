@@ -26,6 +26,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>LATEST</version>
+		</dependency>
+		<dependency>
 			<groupId>org.microservice-api-patterns</groupId>
 			<artifactId>domaindrivendesign-library</artifactId>
 			<version>0.2.4</version>
